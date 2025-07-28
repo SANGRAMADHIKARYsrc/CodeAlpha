@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🎵 AI Music Generator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>AI Music Generator</h1>
+    <p>Click below to generate new music using AI!</p>
+    <button id="generateBtn" onclick="generateMusic()">🎼 Generate Music</button>
+    <audio controls id="musicPlayer" class="hidden"></audio>
+    <a id="downloadLink" href="#" download="generated_music.mid" class="hidden">⬇️ Download Music</a>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
